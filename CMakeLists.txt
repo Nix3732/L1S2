@@ -10,3 +10,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 add_executable("${PROJECT_NAME}" L1.cpp L1head.hpp L1func.cpp)
 
 file(COPY "data.txt" DESTINATION "/")
+file(COPY "..txt" DESTINATION "/")
