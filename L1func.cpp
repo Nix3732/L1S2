@@ -4,13 +4,18 @@ namespace ez
 {	
 	int Number()
 	{
-		std::ifstream num("..txt");
-		std::string s;
-		num >> s;
-		std::ofstream out("..txt", std::ios::app);
-		out << '.';
-
-		return s.length();
+		int n = 0;
+		std::string line;
+		std::ifstream in("data.txt");
+		if (in.is_open())
+		{
+			while (std::getline(in, line))
+			{
+				n++;
+			}
+		}
+		in.close();
+		return n;
 	}
 
 	void AddDate(int n)
