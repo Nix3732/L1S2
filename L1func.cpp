@@ -23,7 +23,7 @@ namespace ez
 		std::ofstream c("data.txt", std::ios::app);
 		time_t rawtime = time(NULL);
 		tm t = *localtime(&rawtime);
-		c << n << "_" << t.tm_year + 1900 << "-" << t.tm_mon + 1 << "-" << t.tm_mday << "-" << t.tm_hour << "-" << t.tm_min << "-" << t.tm_sec << std::endl;
+		c << n << "-" << t.tm_year + 1900 << "-" << t.tm_mon + 1 << "-" << t.tm_mday << "-" << t.tm_hour << "-" << t.tm_min << "-" << t.tm_sec << std::endl;
 	}
 
 	
