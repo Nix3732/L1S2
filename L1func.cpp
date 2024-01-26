@@ -15,7 +15,7 @@ namespace ez
 			}
 		}
 		in.close();
-		return n;
+		return n+1;
 	}
 
 	void AddDate(int n)
